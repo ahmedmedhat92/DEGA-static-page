@@ -1,0 +1,109 @@
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #071C42;
+  text-align: center;
+  height: 100%;
+}
+
+h1.heading {
+  font-size: 1.8rem;
+  margin: 20px 0 15px 0;
+  font-weight: 600;
+}
+
+.heading-arabic {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.5rem; /* same as English heading */
+  font-weight: 600;
+  direction: rtl;
+  margin: 20px 0 15px 0;
+}
+
+p {
+  font-size: 1.1rem; /* standard font size for all paragraphs */
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.arabic {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Main Content & Logo */
+.main-logo {
+  height: 160px; /* slightly bigger */
+  margin-bottom: 20px;
+}
+
+/* Background */
+main {
+  background: url("images/DEGA-bg.png") no-repeat center center;
+  background-size: cover;
+  padding: 40px 20px;
+  min-height: calc(100vh - 160px); /* leave space for footer */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+  padding: 20px;
+  background: none; /* no overlay */
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 25px;
+  background-color: #43A4C2;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #3DCAB1;
+}
+
+/* Notes */
+.note {
+  font-size: 1.1rem; /* standard font size */
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #071C42;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 20px; /* space after copyright */
+}
+
+/* Logos */
+footer .logos {
+  display: flex;
+  flex-wrap: wrap;       /* allow logos to wrap on mobile */
+  justify-content: center; /* center logos */
+  gap: 15px;             /* spacing between logos */
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer .logos img {
+  height: 35px;
+}
